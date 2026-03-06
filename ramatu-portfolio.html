@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramatu Issah | Marketing Content Creator & Video Editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style type="text/tailwindcss">
+        @layer base {
+            body {
+                font-family: 'Inter', sans-serif;
+                background: #0a0a0a;
+                color: #ffffff;
+                overflow-x: hidden;
+            }
+            h1, h2, h3, .display-font {
+                font-family: 'Space Grotesk', sans-serif;
+            }
+        }
+        @layer components {
+            .gradient-text {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+            .glass-card {
+                background: rgba(255, 255, 255, 0.03);
+                backdrop-filter: blur(10px);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            .hover-lift {
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            .hover-lift:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
+            }
+            .video-container {
+                position: relative;
+                background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+                border-radius: 16px;
+                overflow: hidden;
+            }
+            .skill-bar {
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 999px;
+                overflow: hidden;
+            }
+            .skill-progress {
+                background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+                height: 100%;
+                border-radius: 999px;
+                transition: width 1s ease-out;
+            }
+            .timeline-line {
+                background: linear-gradient(to bottom, #667eea, #764ba2);
+            }
+            .nav-blur {
+                backdrop-filter: blur(20px);
+                background: rgba(10, 10, 10, 0.8);
+            }
+            .video-embed-placeholder {
+                background: linear-gradient(135deg, #667eea20 0%, #764ba220 100%);
+                border: 2px dashed rgba(102, 126, 234, 0.3);
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 nav-blur border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="display-font text-2xl font-bold gradient-text">RI</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-sm hover:text-purple-400 transition-colors">About</a>
+                    <a href="#work" class="text-sm hover:text-purple-400 transition-colors">Featured Work</a>
+                    <a href="#skills" class="text-sm hover:text-purple-400 transition-colors">Skills</a>
+                    <a href="#experience" class="text-sm hover:text-purple-400 transition-colors">Experience</a>
+                    <a href="#contact" class="text-sm hover:text-purple-400 transition-colors">Contact</a>
+                </div>
+                <a href="mailto:ramadejesus@gmail.com" class="bg-gradient-to-r from-purple-600 to-pink-600 px-6 py-2 rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-purple-500/30 transition-all">
+                    Hire Me
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900/20 via-black to-black"></div>
+        <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23667eea\' fill-opacity=\'0.05\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E'); opacity: 0.4;"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-block mb-4 px-4 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-purple-400">
+                Marketing Content Creator & Video Editor
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                Creating <span class="gradient-text">Viral Moments</span><br>
+                for Fandom & Live Events
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto mb-10 leading-relaxed">
+                Dynamic content creator with 3+ years of experience crafting engaging short-form video content, 
+                managing social media strategies, and driving measurable engagement across TikTok, Instagram, and YouTube.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#work" class="bg-gradient-to-r from-purple-600 to-pink-600 px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl hover:shadow-purple-500/30 transition-all flex items-center justify-center gap-2">
+                    <i data-lucide="play-circle" class="w-5 h-5"></i>
+                    View My Work
+                </a>
+                <a href="mailto:ramadejesus@gmail.com" class="glass-card px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/10 transition-all flex items-center justify-center gap-2">
+                    <i data-lucide="mail" class="w-5 h-5"></i>
+                    Get In Touch
+                </a>
+            </div>
+            
+            <div class="mt-16 flex justify-center gap-8 text-sm text-gray-500">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="map-pin" class="w-4 h-4"></i>
+                    Toronto, ON
+                </div>
+                <div class="flex items-center gap-2">
+                    <i data-lucide="phone" class="w-4 h-4"></i>
+                    +1 (437) 424-5615
+                </div>
+                <div class="flex items-center gap-2">
+                    <i data-lucide="instagram" class="w-4 h-4"></i>
+                    @rama_dejesus
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-6">Why Informa?<br><span class="gradient-text">Perfect Match</span></h2>
+                    <div class="space-y-4 text-gray-300 leading-relaxed">
+                        <p>
+                            I'm passionate about pop culture, fandoms, and the energy of live events. FAN EXPO, VidCon, and 
+                            Informa's portfolio of shows represent exactly the type of dynamic, community-driven content I excel at creating.
+                        </p>
+                        <p>
+                            With expertise in short-form video content, trend research, and analytics-driven strategy, 
+                            I specialize in creating those <strong>viral moments</strong> that capture attention and drive engagement. 
+                            My experience managing UGC campaigns and collaborating with brands has prepared me to contribute 
+                            immediately to Informa's iconic events.
+                        </p>
+                        <p>
+                            I'm eager to bring my technical skills in Adobe Creative Suite, deep understanding of fandom culture, 
+                            and proven ability to create trending content to engage audiences and drive event success.
+                        </p>
+                    </div>
+                    
+                    <div class="mt-8 grid grid-cols-3 gap-4">
+                        <div class="glass-card p-4 rounded-xl text-center">
+                            <div class="text-3xl font-bold gradient-text">3+</div>
+                            <div class="text-sm text-gray-400">Years Experience</div>
+                        </div>
+                        <div class="glass-card p-4 rounded-xl text-center">
+                            <div class="text-3xl font-bold gradient-text">4</div>
+                            <div class="text-sm text-gray-400">Featured Reels</div>
+                        </div>
+                        <div class="glass-card p-4 rounded-xl text-center">
+                            <div class="text-3xl font-bold gradient-text">100%</div>
+                            <div class="text-sm text-gray-400">Trend Focused</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl opacity-30 blur-xl"></div>
+                    <div class="relative glass-card rounded-2xl p-8">
+                        <h3 class="text-xl font-semibold mb-6 flex items-center gap-2">
+                            <i data-lucide="target" class="w-5 h-5 text-purple-400"></i>
+                            Key Strengths for This Role
+                        </h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <div class="w-6 h-6 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <i data-lucide="check" class="w-4 h-4 text-purple-400"></i>
+                                </div>
+                                <div>
+                                    <strong class="text-white">Advanced Video Editing & SFX</strong>
+                                    <p class="text-sm text-gray-400">Clone effects, seamless transitions, and visual effects (see Portfolio Reel #1)</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div class="w-6 h-6 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <i data-lucide="check" class="w-4 h-4 text-purple-400"></i>
+                                </div>
+                                <div>
+                                    <strong class="text-white">Brand Collaboration & UGC</strong>
+                                    <p class="text-sm text-gray-400">Professional outfit hauls with logo integration and product showcasing (see Portfolio Reel #2)</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div class="w-6 h-6 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <i data-lucide="check" class="w-4 h-4 text-purple-400"></i>
+                                </div>
+                                <div>
+                                    <strong class="text-white">Trend Research & Viral Formats</strong>
+                                    <p class="text-sm text-gray-400">Daily monitoring of TikTok/YouTube trends for content optimization</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div class="w-6 h-6 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <i data-lucide="check" class="w-4 h-4 text-purple-400"></i>
+                                </div>
+                                <div>
+                                    <strong class="text-white">Analytics-Driven Strategy</strong>
+                                    <p class="text-sm text-gray-400">Google Analytics certified; use data to refine content and boost engagement</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div class="w-6 h-6 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <i data-lucide="check" class="w-4 h-4 text-purple-400"></i>
+                                </div>
+                                <div>
+                                    <strong class="text-white">Fandom & Pop Culture Knowledge</strong>
+                                    <p class="text-sm text-gray-400">Deep passion for and understanding of cosplay, event culture, and community engagement</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Work Section -->
+    <section id="work" class="py-20 bg-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Featured <span class="gradient-text">Video Content</span></h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    Curated portfolio showcasing special effects editing, brand collaboration expertise, and viral content creation 
+                    specifically tailored for live event marketing and fandom-driven communities.
+                </p>
+            </div>
+
+            <!-- Video Grid - 2x2 Layout -->
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                
+                <!-- Video 1: Clone Effect / SFX Showcase -->
+                <div class="video-container hover-lift group">
+                    <div class="aspect-[9/16] bg-gradient-to-br from-purple-900/50 to-black relative flex items-center justify-center video-embed-placeholder">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center p-8">
+                                <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-purple-500/20 flex items-center justify-center group-hover:scale-110 transition-transform border-2 border-purple-500/50">
+                                    <i data-lucide="sparkles" class="w-8 h-8 text-purple-400"></i>
+                                </div>
+                                <p class="text-sm text-purple-400 mb-2 font-semibold">Portfolio Reel #1</p>
+                                <h3 class="text-xl font-semibold mb-2">Clone Effect / SFX Edit</h3>
+                                <p class="text-sm text-gray-400">Advanced visual effects with dual presence</p>
+                                <div class="mt-4 inline-block px-3 py-1 rounded-full bg-purple-500/20 text-xs text-purple-300">
+                                    <i data-lucide="star" class="w-3 h-3 inline mr-1"></i> Featured for Informa
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-lg font-semibold text-purple-300">Winter Clone Effect</h3>
+                            <span class="text-xs bg-purple-500/20 text-purple-400 px-2 py-1 rounded">SFX Heavy</span>
+                        </div>
+                        <p class="text-sm text-gray-400 mb-4">
+                            Demonstrates advanced <strong>special effects editing</strong> by cloning the creator into two identical figures. 
+                            One clone shivers from cold while the other gestures and demonstrates proper winter dressing. 
+                            Perfect showcase of <strong>visual storytelling</strong> and <strong>comedic timing</strong> for event marketing content.
+                        </p>
+                        <div class="flex gap-2 flex-wrap mb-4">
+                            <span class="text-xs bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full">Clone Effect</span>
+                            <span class="text-xs bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full">Visual Effects</span>
+                            <span class="text-xs bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full">Comedic Editing</span>
+                            <span class="text-xs bg-purple-500/20 text-purple-300 px-3 py-1 rounded-full">Storytelling</span>
+                        </div>
+                        <div class="bg-white/5 rounded-lg p-3 mb-4">
+                            <p class="text-xs text-gray-400">
+                                <strong class="text-purple-400">Why it works for Informa:</strong> Clone effects are hugely popular in fandom/cosplay content. 
+                                This technique could create engaging "meet your cosplay twin" content for FAN EXPO or humorous 
+                                "expectation vs. reality" event videos for VidCon.
+                            </p>
+                        </div>
+                        <a href="https://www.instagram.com/reel/DT22_ZFjRc6/" target="_blank" class="inline-flex items-center text-sm text-purple-400 hover:text-purple-300 font-semibold">
+                            <i data-lucide="play-circle" class="w-4 h-4 mr-2"></i>
+                            Watch on Instagram 
+                            <i data-lucide="external-link" class="w-4 h-4 ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Video 2: Brand Collaboration / UGC -->
+                <div class="video-container hover-lift group">
+                    <div class="aspect-[9/16] bg-gradient-to-br from-pink-900/50 to-black relative flex items-center justify-center video-embed-placeholder">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center p-8">
+                                <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-pink-500/20 flex items-center justify-center group-hover:scale-110 transition-transform border-2 border-pink-500/50">
+                                    <i data-lucide="shopping-bag" class="w-8 h-8 text-pink-400"></i>
+                                </div>
+                                <p class="text-sm text-pink-400 mb-2 font-semibold">Portfolio Reel #2</p>
+                                <h3 class="text-xl font-semibold mb-2">Brand Collaboration</h3>
+                                <p class="text-sm text-gray-400">Professional UGC with logo integration</p>
+                                <div class="mt-4 inline-block px-3 py-1 rounded-full bg-pink-500/20 text-xs text-pink-300">
+                                    <i data-lucide="star" class="w-3 h-3 inline mr-1"></i> Featured for Informa
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-lg font-semibold text-pink-300">Outfit Haul Brand Feature</h3>
+                            <span class="text-xs bg-pink-500/20 text-pink-400 px-2 py-1 rounded">UGC / Brand</span>
+                        </div>
+                        <p class="text-sm text-gray-400 mb-4">
+                            Professional <strong>brand collaboration</strong> showcasing outfit haul with seamless logo integration 
+                            and dynamic spin transitions between looks. Demonstrates ability to create <strong>revenue-generating content</strong> 
+                            that maintains authenticity while highlighting brand identity—exactly what Informa's sponsorship team requires.
+                        </p>
+                        <div class="flex gap-2 flex-wrap mb-4">
+                            <span class="text-xs bg-pink-500/20 text-pink-300 px-3 py-1 rounded-full">Brand Collaboration</span>
+                            <span class="text-xs bg-pink-500/20 text-pink-300 px-3 py-1 rounded-full">Logo Integration</span>
+                            <span class="text-xs bg-pink-500/20 text-pink-300 px-3 py-1 rounded-full">Product Showcase</span>
+                            <span class="text-xs bg-pink-500/20 text-pink-300 px-3 py-1 rounded-full">UGC Style</span>
+                        </div>
+                        <div class="bg-white/5 rounded-lg p-3 mb-4">
+                            <p class="text-xs text-gray-400">
+                                <strong class="text-pink-400">Why it works for Informa:</strong> Directly applicable to Interior Design Show, 
+                                One of a Kind, and Art Toronto vendor showcases. Proves ability to create sponsored content 
+                                that drives product awareness while maintaining engaging, native feel.
+                            </p>
+                        </div>
+                        <a href="https://www.instagram.com/reel/DTGKXGJiR49/" target="_blank" class="inline-flex items-center text-sm text-pink-400 hover:text-pink-300 font-semibold">
+                            <i data-lucide="play-circle" class="w-4 h-4 mr-2"></i>
+                            Watch on Instagram 
+                            <i data-lucide="external-link" class="w-4 h-4 ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Video 3: Original SFX Reel (Cd_bQRvKBtm) -->
+                <div class="video-container hover-lift group">
+                    <div class="aspect-[9/16] bg-gradient-to-br from-blue-900/50 to-black relative flex items-center justify-center video-embed-placeholder">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center p-8">
+                                <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-blue-500/20 flex items-center justify-center group-hover:scale-110 transition-transform border-2 border-blue-500/50">
+                                    <i data-lucide="wand-2" class="w-8 h-8 text-blue-400"></i>
+                                </div>
+                                <p class="text-sm text-blue-400 mb-2 font-semibold">Portfolio Reel #3</p>
+                                <h3 class="text-xl font-semibold mb-2">Advanced Transitions</h3>
+                                <p class="text-sm text-gray-400">Cinematic editing techniques</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-lg font-semibold text-blue-300">Cinematic Transition Edit</h3>
+                            <span class="text-xs bg-blue-500/20 text-blue-400 px-2 py-1 rounded">Technical</span>
+                        </div>
+                        <p class="text-sm text-gray-400 mb-4">
+                            Showcases <strong>advanced editing techniques</strong> with seamless transitions, color grading, and visual effects. 
+                            Demonstrates technical proficiency in Adobe Creative Suite for high-quality event highlight reels 
+                            and showcase content.
+                        </p>
+                        <div class="flex gap-2 flex-wrap mb-4">
+                            <span class="text-xs bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full">After Effects</span>
+                            <span class="text-xs bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full">Color Grading</span>
+                            <span class="text-xs bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full">Seamless Transitions</span>
+                        </div>
+                        <div class="bg-white/5 rounded-lg p-3 mb-4">
+                            <p class="text-xs text-gray-400">
+                                <strong class="text-blue-400">Why it works for Informa:</strong> Technical demonstration of editing capabilities 
+                                required for "robust skillset of video editing capabilities, including special effects skills" 
+                                mentioned in the job description.
+                            </p>
+                        </div>
+                        <a href="https://www.instagram.com/reel/Cd_bQRvKBtm/" target="_blank" class="inline-flex items-center text-sm text-blue-400 hover:text-blue-300 font-semibold">
+                            <i data-lucide="play-circle" class="w-4 h-4 mr-2"></i>
+                            Watch on Instagram 
+                            <i data-lucide="external-link" class="w-4 h-4 ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Video 4: Original Trending Reel (Clg4u-dgnIZ) -->
+                <div class="video-container hover-lift group">
+                    <div class="aspect-[9/16] bg-gradient-to-br from-green-900/50 to-black relative flex items-center justify-center video-embed-placeholder">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center p-8">
+                                <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-green-500/20 flex items-center justify-center group-hover:scale-110 transition-transform border-2 border-green-500/50">
+                                    <i data-lucide="trending-up" class="w-8 h-8 text-green-400"></i>
+                                </div>
+                                <p class="text-sm text-green-400 mb-2 font-semibold">Portfolio Reel #4</p>
+                                <h3 class="text-xl font-semibold mb-2">Trending Format</h3>
+                                <p class="text-sm text-gray-400">Viral audio & trend optimization</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-lg font-semibold text-green-300">Viral Format Content</h3>
+                            <span class="text-xs bg-green-500/20 text-green-400 px-2 py-1 rounded">Trending</span>
+                        </div>
+                        <p class="text-sm text-gray-400 mb-4">
+                            Leverages <strong>trending audio</strong> and editing styles to maximize reach and engagement. 
+                            Shows ability to adapt quickly to platform trends and algorithm preferences—essential skill 
+                            for keeping content relevant and discoverable.
+                        </p>
+                        <div class="flex gap-2 flex-wrap mb-4">
+                            <span class="text-xs bg-green-500/20 text-green-300 px-3 py-1 rounded-full">Trending Audio</span>
+                            <span class="text-xs bg-green-500/20 text-green-300 px-3 py-1 rounded-full">Viral Format</span>
+                            <span class="text-xs bg-green-500/20 text-green-300 px-3 py-1 rounded-full">Quick Cuts</span>
+                        </div>
+                        <div class="bg-white/5 rounded-lg p-3 mb-4">
+                            <p class="text-xs text-gray-400">
+                                <strong class="text-green-400">Why it works for Informa:</strong> Proves ability to "live and breathe 
+                                social media trends, particularly on TikTok and YouTube" as required. Shows you can adapt 
+                                content to whatever format is viral that week.
+                            </p>
+                        </div>
+                        <a href="https://www.instagram.com/reel/Clg4u-dgnIZ/" target="_blank" class="inline-flex items-center text-sm text-green-400 hover:text-green-300 font-semibold">
+                            <i data-lucide="play-circle" class="w-4 h-4 mr-2"></i>
+                            Watch on Instagram 
+                            <i data-lucide="external-link" class="w-4 h-4 ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Strategy Summary -->
+            <div class="glass-card rounded-2xl p-8 mb-12">
+                <h3 class="text-2xl font-bold mb-6 flex items-center gap-2">
+                    <i data-lucide="lightbulb" class="w-6 h-6 text-yellow-400"></i>
+                    Portfolio Strategy: Why These 4 Reels?
+                </h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0 text-purple-400 font-bold text-sm">1</div>
+                            <div>
+                                <h4 class="font-semibold text-purple-300">Clone Effect (Reel #1)</h4>
+                                <p class="text-sm text-gray-400">Proves "special effects skills" requirement. Viral in fandom spaces.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-full bg-pink-500/20 flex items-center justify-center flex-shrink-0 text-pink-400 font-bold text-sm">2</div>
+                            <div>
+                                <h4 class="font-semibold text-pink-300">Brand Haul (Reel #2)</h4>
+                                <p class="text-sm text-gray-400">Demonstrates UGC & sponsorship collaboration experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center flex-shrink-0 text-blue-400 font-bold text-sm">3</div>
+                            <div>
+                                <h4 class="font-semibold text-blue-300">Technical SFX (Reel #3)</h4>
+                                <p class="text-sm text-gray-400">Shows Adobe Creative Suite proficiency & editing range.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-full bg-green-500/20 flex items-center justify-center flex-shrink-0 text-green-400 font-bold text-sm">4</div>
+                            <div>
+                                <h4 class="font-semibold text-green-300">Trending Format (Reel #4)</h4>
+                                <p class="text-sm text-gray-400">Proves trend research capabilities & platform fluency.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6 p-4 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-lg border border-purple-500/20">
+                    <p class="text-sm text-gray-300">
+                        <strong class="text-purple-400">Complete Narrative:</strong> These 4 reels tell the story: "I can create technically impressive 
+                        special effects (Reels 1&3), collaborate professionally with brands (Reel 2), and stay ahead of trends (Reel 4)." 
+                        Exactly what Informa needs for FAN EXPO, VidCon, and their design events.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-4xl font-bold mb-6">Technical <span class="gradient-text">Skills</span></h2>
+                    <p class="text-gray-400 mb-8">
+                        Proficient in industry-standard tools for content creation, video editing, and digital marketing 
+                        analytics—directly applicable to Informa's multi-platform event marketing needs.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Video Editing & SFX (Adobe Premiere, After Effects)</span>
+                                <span class="text-purple-400">95%</span>
+                            </div>
+                            <div class="skill-bar h-2">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Social Media Management (TikTok, Instagram, YouTube)</span>
+                                <span class="text-purple-400">92%</span>
+                            </div>
+                            <div class="skill-bar h-2">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Brand Collaboration & UGC Creation</span>
+                                <span class="text-purple-400">90%</span>
+                            </div>
+                            <div class="skill-bar h-2">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Content Strategy & SEO</span>
+                                <span class="text-purple-400">85%</span>
+                            </div>
+                            <div class="skill-bar h-2">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Analytics & Data Analysis (Google Analytics Certified)</span>
+                                <span class="text-purple-400">80%</span>
+                            </div>
+                            <div class="skill-bar h-2">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Platform Expertise</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="glass-card p-4 rounded-xl flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-black flex items-center justify-center">
+                                <i data-lucide="video" class="w-5 h-5 text-white"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">TikTok</div>
+                                <div class="text-xs text-gray-400">Trend Research & Viral Content</div>
+                            </div>
+                        </div>
+                        
+                        <div class="glass-card p-4 rounded-xl flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center">
+                                <i data-lucide="instagram" class="w-5 h-5 text-white"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Instagram</div>
+                                <div class="text-xs text-gray-400">Reels, Stories & Brand Collabs</div>
+                            </div>
+                        </div>
+                        
+                        <div class="glass-card p-4 rounded-xl flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-red-600 flex items-center justify-center">
+                                <i data-lucide="youtube" class="w-5 h-5 text-white"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">YouTube</div>
+                                <div class="text-xs text-gray-400">Long-form & Shorts Strategy</div>
+                            </div>
+                        </div>
+                        
+                        <div class="glass-card p-4 rounded-xl flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-blue-600 flex items-center justify-center">
+                                <i data-lucide="bar-chart-2" class="w-5 h-5 text-white"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold">Google Analytics</div>
+                                <div class="text-xs text-gray-400">Certified Professional</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h3 class="text-2xl font-bold mb-4">Specialized Capabilities</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm hover:bg-purple-500/20 hover:border-purple-500/50 transition-colors cursor-default">Clone Effects</span>
+                            <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm hover:bg-purple-500/20 hover:border-purple-500/50 transition-colors cursor-default">Motion Graphics</span>
+                            <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm hover:bg-purple-500/20 hover:border-purple-500/50 transition-colors cursor-default">Color Grading</span>
+                            <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm hover:bg-purple-500/20 hover:border-purple-500/50 transition-colors cursor-default">Brand Integration</span>
+                            <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm hover:bg-purple-500/20 hover:border-purple-500/50 transition-colors cursor-default">UGC Campaigns</span>
+                            <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm hover:bg-purple-500/20 hover:border-purple-500/50 transition-colors cursor-default">Sponsored Content</span>
+                            <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm hover:bg-purple-500/20 hover:border-purple-500/50 transition-colors cursor-default">Content Calendars</span>
+                            <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm hover:bg-purple-500/20 hover:border-purple-500/50 transition-colors cursor-default">Community Management</span>
+                            <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm hover:bg-purple-500/20 hover:border-purple-500/50 transition-colors cursor-default">SEO Optimization</span>
+                            <span class="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm hover:bg-purple-500/20 hover:border-purple-500/50 transition-colors cursor-default">Trend Forecasting</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-12 text-center">Relevant <span class="gradient-text">Experience</span></h2>
+            
+            <div class="relative">
+                <div class="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 timeline-line"></div>
+                
+                <!-- Job 1 -->
+                <div class="relative mb-12 md:mb-0">
+                    <div class="md:flex items-center justify-between">
+                        <div class="md:w-5/12 md:text-right md:pr-8 mb-4 md:mb-0">
+                            <div class="glass-card p-6 rounded-xl hover-lift">
+                                <h3 class="text-xl font-bold mb-1">Content & Social Media Specialist</h3>
+                                <p class="text-purple-400 font-medium mb-2">Freelance</p>
+                                <p class="text-sm text-gray-400 mb-4">September 2020 - Present | Toronto, ON</p>
+                                <ul class="text-sm text-gray-300 space-y-2">
+                                    <li>• Created optimized short-form video content (Reels, TikToks) for fashion/lifestyle brands</li>
+                                    <li>• Managed content calendars ensuring consistent posting and community engagement</li>
+                                    <li>• Produced UGC and sponsored campaigns driving product awareness and conversions</li>
+                                    <li>• Leveraged analytics to refine strategy, improving engagement rates and audience growth</li>
+                                    <li>• Applied trending audio, creative transitions, and aesthetic edits to enhance visibility</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-purple-500 border-4 border-black z-10"></div>
+                        <div class="md:w-5/12 md:pl-8 hidden md:block"></div>
+                    </div>
+                </div>
+                
+                <!-- Job 2 -->
+                <div class="relative mb-12 md:mb-0 md:mt-12">
+                    <div class="md:flex items-center justify-between">
+                        <div class="md:w-5/12 md:pr-8 hidden md:block"></div>
+                        <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-pink-500 border-4 border-black z-10"></div>
+                        <div class="md:w-5/12 md:pl-8 mb-4 md:mb-0">
+                            <div class="glass-card p-6 rounded-xl hover-lift">
+                                <h3 class="text-xl font-bold mb-1">Sales/Marketing Representative</h3>
+                                <p class="text-pink-400 font-medium mb-2">SVP Sports</p>
+                                <p class="text-sm text-gray-400 mb-4">November 2023 - Present | Toronto, ON</p>
+                                <ul class="text-sm text-gray-300 space-y-2">
+                                    <li>• Collaborated on coordinated marketing and sales initiatives achieving store goals</li>
+                                    <li>• Enhanced brand experience through tailored customer engagement</li>
+                                    <li>• Maintained organized, visually appealing store environment for promotional campaigns</li>
+                                    <li>• Exceeded monthly sales targets through strategic upselling and cross-selling</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Education -->
+                <div class="relative md:mt-12">
+                    <div class="md:flex items-center justify-between">
+                        <div class="md:w-5/12 md:text-right md:pr-8 mb-4 md:mb-0">
+                            <div class="glass-card p-6 rounded-xl hover-lift">
+                                <h3 class="text-xl font-bold mb-1">Marketing (College Diploma)</h3>
+                                <p class="text-blue-400 font-medium mb-2">Centennial College</p>
+                                <p class="text-sm text-gray-400 mb-2">September 2023 - June 2025 | Ontario</p>
+                                <p class="text-sm text-gray-400">English (Bachelor's) - University of Education Winneba (2016-2020)</p>
+                                <div class="mt-4 flex items-center gap-2">
+                                    <span class="px-3 py-1 rounded-full bg-yellow-500/20 text-yellow-400 text-xs">Google AdWords Certified</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-blue-500 border-4 border-black z-10"></div>
+                        <div class="md:w-5/12 md:pl-8 hidden md:block"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-4">Ready to Create <span class="gradient-text">Viral Moments</span>?</h2>
+            <p class="text-xl text-gray-400 mb-12">
+                Let's discuss how I can bring my video editing expertise, trend research skills, and passion for 
+                fandom culture to the Informa marketing team.
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+                <a href="mailto:ramadejesus@gmail.com" class="glass-card p-6 rounded-xl hover:bg-white/10 transition-all group">
+                    <div class="w-12 h-12 mx-auto mb-4 rounded-full bg-purple-500/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <i data-lucide="mail" class="w-6 h-6 text-purple-400"></i>
+                    </div>
+                    <h3 class="font-semibold mb-1">Email</h3>
+                    <p class="text-sm text-gray-400">ramadejesus@gmail.com</p>
+                </a>
+                
+                <a href="tel:+14374245615" class="glass-card p-6 rounded-xl hover:bg-white/10 transition-all group">
+                    <div class="w-12 h-12 mx-auto mb-4 rounded-full bg-pink-500/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <i data-lucide="phone" class="w-6 h-6 text-pink-400"></i>
+                    </div>
+                    <h3 class="font-semibold mb-1">Phone</h3>
+                    <p class="text-sm text
